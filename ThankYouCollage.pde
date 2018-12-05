@@ -10,8 +10,11 @@ int y = 50;
 void setup(){
   size(600,600);
 img=loadImage("Flag2.png");
-}
-
+        img2 = loadImage("lava.png");
+  img3 = loadImage("brick.png");
+            img4 = loadImage("Marioo.png");
+                 img5 = loadImage("BOwser.png");
+} 
 void draw(){
   background(0);
 
@@ -26,16 +29,12 @@ noTint();
                 text("that...",220,330);
                 fill(0);
     rect(mouseX,mouseY-500,2000,2000);
-        img2 = loadImage("lava.png");
     image(img2,150,500,width*.42,height*.2);
-  img3 = loadImage("brick.png");
   image(img3,0,450);
     image(img3,400,450);
     image(img,320,200,width*.5,height*.5);
-    img4 = loadImage("Marioo.png");
     image(img4,mouseX-50,mouseY,width*.2,height*.2);
     tint(255,140);
-         img5 = loadImage("BOwser.png");
 image(img5,200,500,width*.3,height*.3);
 if(mouseX>450)
 {
